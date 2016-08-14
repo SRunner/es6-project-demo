@@ -1,5 +1,5 @@
 import React from 'react';
-require('../css/login.css');
+require('../css/login-page.css');
 
 class Login extends React.Component {
     loginClick() {
@@ -10,7 +10,7 @@ class Login extends React.Component {
             url: 'http://localhost:3000/login',
             async: true,
             data: {name: name, password: password},
-            success(result) {
+            success: function(result) {
                 if (result == "SUCCESS") {
                     location.href = '/#/homePage';
                 } else if (result == 'NO INFO') {
@@ -18,7 +18,6 @@ class Login extends React.Component {
                 } else if (result == 'passwordError') {
                     alert('Password Error');
                 } else if (result == 'personalInfo') {
-                    alert('aaaaaaa');
                     location.href = '/#/personalInfoPage';
                 }
             },

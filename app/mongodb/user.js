@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
-var Schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
-var User= new Schema({
+const User= new Schema({
     ID:Number,
 	name: String,
     password: String,
     email:String,
     tel:String
 });
-var Users = mongoose.model('users', User);
+const Users = mongoose.model('users', User);
 
 module.exports = Users;
