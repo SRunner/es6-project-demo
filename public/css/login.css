@@ -1,20 +1,29 @@
-*{
-    margin:0;
-    padding:0
-}
+
 body{
     background-color: #c1e2b3;
 }
-.logo{
-    height:100px;
-    background-color:#7a43b6;
+
+#login{
+    border-radius: 5px;
+    border: solid 2px #9d9d9d;
+    text-align: center;
+    width:300px;
+    height:400px;
+    background-color:#ebcccc;
+    padding-top:140px;
 }
-.login{
-    background-color:#C0C0C0;
+.divClass{
+    padding-bottom:20px;
+    font-size: medium;
 }
-.title{
-   text-align: center;
+.inputClass{
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+#btnLogin{
+    margin-right:20px;
 }
 .button-center{
-   text-align: center;
+    text-align: center;
 }
