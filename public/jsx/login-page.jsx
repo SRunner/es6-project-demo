@@ -16,7 +16,6 @@ class Login extends React.Component {
       async: true,
       data: {name: name, password: password},
       success: function (result) {
-        console.log(result);
         if (result == "SUCCESS") {
           location.href = '/#/homePage';
         } else if (result == 'personalInfo') {

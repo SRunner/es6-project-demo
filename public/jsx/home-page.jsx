@@ -35,16 +35,16 @@ class CaroudelFigure extends React.Component {
           </ol>
           <div className="carousel-inner">
             <div className="item active">
-              <img src="../img/4.jpg" className="img-rounded"/>
+              <img src="../img/Carousel1.jpg" className="img-rounded"/>
             </div>
             <div className="item">
-              <img src="../img/6.jpg" className="img-rounded"/>
+              <img src="../img/Carousel2.jpg" className="img-rounded"/>
             </div>
             <div className="item">
-              <img src="../img/7.jpg" className="img-rounded"/>
+              <img src="../img/Carousel3.jpg" className="img-rounded"/>
             </div>
             <div className="item">
-              <img src="../img/9.jpg" className="img-rounded"/>
+              <img src="../img/Carousel4.jpg" className="img-rounded"/>
             </div>
           </div>
           <a className="carousel-control left" href="#myCarousel"
