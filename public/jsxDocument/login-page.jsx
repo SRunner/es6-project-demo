@@ -13,16 +13,16 @@ class Login extends React.Component {
             success: function(result) {
                 if (result == "SUCCESS") {
                     location.href = '/#/homePage';
-                } else if (result == 'NO INFO') {
-                    alert('NO YOU INFO');
-                } else if (result == 'passwordError') {
-                    alert('Password Error');
-                } else if (result == 'personalInfo') {
+                }  else if (result == 'personalInfo') {
                     location.href = '/#/personalInfoPage';
                 }
             },
             error: function (result) {
-                console.log(result);
+              if (result.responseText == 'NO INFO') {
+                alert('NO YOU INFO');
+              } else if (result.responseText == 'passwordError') {
+                alert('Password Error');
+              }
             }
         })
     }

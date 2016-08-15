@@ -30,7 +30,7 @@ app.get('/hello', function (req, res) {
   res.send('Hello, world!');
 });
 
-app.post('/login',mongodb.insert);
+app.post('/login',mongodb.login);
 app.post('/personal',mongodb.modify);
 
 app.listen(3000, function () {

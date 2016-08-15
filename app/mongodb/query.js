@@ -1,18 +1,23 @@
 const User = require('./user.js');
 let userName = "";
 
-exports.insert = function (req, res) {
+exports.login = function (req, res) {
     let name = req.body.name;
     let password = req.body.password;
     User.findOne({name: name}, function (err, user) {
         if (err) res.send(err.message);
         if (user == null) {
-            res.send('NO INFO');
+            // let f = new User({name:name,password:password});
+            // f.save(function (err) {
+            //     console.log('save status:', err ? 'failed' : 'success');
+            // });
+            res.status(500).send('NO INFO');
         } else {
             if (user.password != password) {
-                res.send('passwordError');
+                res.status(500).send('passwordError');
             } else {
-                if (user.tel || user.email) {
+                userName = name;
+                if (user.tel && user.email) {
                     res.send('SUCCESS');
                 } else {
                     res.send('personalInfo');
