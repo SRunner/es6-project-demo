@@ -1,20 +1,29 @@
-*{
-    margin:0;
-    padding:0
+#loginCente{
+    width: 90%;
+    height: 510px;
+    margin: 0px auto;
 }
-body{
-    background-color: #c1e2b3;
+#login {
+    margin-top: 45px;
+    border-radius: 5px;
+    border: solid 2px #9d9d9d;
+    width: 300px;
+    height: 400px;
+    background-color: lightblue;
+    padding-top: 140px;
 }
-.logo{
-    height:100px;
-    background-color:#7a43b6;
+
+.divClass {
+    padding-bottom: 20px;
+    font-size: medium;
 }
-.login{
-    background-color:#C0C0C0;
+.inputClass{
+    margin-left: 5px;
+    border-radius: 5px;
 }
-.title{
-   text-align: center;
+#btnLogin{
+    margin-right:20px;
 }
 .button-center{
-   text-align: center;
+    text-align: center;
 }

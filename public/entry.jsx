@@ -1,10 +1,10 @@
 import {Router, Route, IndexRedirect, hashHistory} from 'react-router';
-import LoginPage from './jsxDocument/login-page.jsx';
-import HomePage from './jsxDocument/home-page.jsx';
-import Delivery from './jsxDocument/delivery-page.jsx';
-import Book from './jsxDocument/book-page.jsx';
-import personalInfo from './jsxDocument/personal-information-page.jsx';
-import App from './jsxDocument/app.jsx';
+import LoginPage from './jsx/login-page.jsx';
+import HomePage from './jsx/home-page.jsx';
+import Delivery from './jsx/delivery-page.jsx';
+import Book from './jsx/book-page.jsx';
+import personalInfo from './jsx/personal-information-page.jsx';
+import App from './jsx/app.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('jquery');
