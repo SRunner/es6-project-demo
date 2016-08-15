@@ -1,7 +1,7 @@
 ES6 Project Demo
 =================
 
-CI status: ![Build Status](https://travis-ci.org/SRunner/es6-project-demo.svg?branch=master)
+CI status: ![Build Status](https://travis-ci.org/SRunner/schoolRunner.svg?branch=master)
 
 A basic es6 project, which includes :
 
