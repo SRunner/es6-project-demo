@@ -1,8 +1,9 @@
-#outermost{
+#outermost {
     width: 50%;
     border: 1px solid #E6E6FA;
     margin-top: 100px;
 }
-h2{
+
+h2 {
     text-align: center;
 }

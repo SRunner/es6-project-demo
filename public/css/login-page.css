@@ -1,8 +1,9 @@
-#loginCente{
+#loginCente {
     width: 90%;
     height: 510px;
     margin: 0px auto;
 }
+
 #login {
     margin-top: 45px;
     border-radius: 5px;
@@ -17,13 +18,16 @@
     padding-bottom: 20px;
     font-size: medium;
 }
-.inputClass{
+
+.inputClass {
     margin-left: 5px;
     border-radius: 5px;
 }
-#btnLogin{
-    margin-right:20px;
+
+#btnLogin {
+    margin-right: 20px;
 }
-.button-center{
+
+.button-center {
     text-align: center;
 }

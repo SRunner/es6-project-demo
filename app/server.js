@@ -11,29 +11,29 @@ const compiler = webpack(webpackConfig);
 app.use(bodyParse.json());
 app.use(bodyParse.urlencoded({extended: true}));
 app.use(webpackDevMiddleware(compiler, {
-  noInfo: true,
-  lazy: false,
-  watchOptions: {
-    aggregateTimeout: 300,
-    poll: true
-  },
-  publicPath: webpackConfig.output.publicPath
+    noInfo: true,
+    lazy: false,
+    watchOptions: {
+        aggregateTimeout: 300,
+        poll: true
+    },
+    publicPath: webpackConfig.output.publicPath
 }));
 
 app.use(webpackHotMiddleware(compiler, {
-  log: console.log
+    log: console.log
 }));
 
 app.use(express.static('./public'));
 
 app.get('/hello', function (req, res) {
-  res.send('Hello, world!');
+    res.send('Hello, world!');
 });
 
-app.post('/login',mongodb.login);
-app.post('/personal',mongodb.modify);
+app.post('/login', mongodb.login);
+app.post('/personal', mongodb.modify);
 
 app.listen(3000, function () {
-  db.connect();
-  console.log('Listening on 3000');
+    db.connect();
+    console.log('Listening on 3000');
 });

@@ -9,7 +9,7 @@ class Login extends React.Component {
   loginClick() {
     let name = $('#StudentID').val();
     let password = $('#Password').val();
-    console.log(name+password);
+    console.log(name + password);
     $.ajax({
       type: 'POST',
       url: 'http://localhost:3000/login',
