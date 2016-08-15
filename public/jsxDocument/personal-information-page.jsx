@@ -2,6 +2,21 @@ import React from 'react'
 import {Link} from 'react-router';
 
 class InformModule extends React.Component {
+    click(){
+        let email = $('#email').val();
+        let tel = $('#mobilePhone').val();
+        $.ajax({
+            type:"post",
+            url:'http://localhost:3000/personal',
+            data:{email:email,tel:tel},
+            success: function (result) {
+                location.href = '/#/homePage';
+            },
+            error: function (result) {
+                console.log(result);
+            }
+        })
+    }
     render() {
         return (
             <div className="container" id="outermost">
@@ -9,7 +24,7 @@ class InformModule extends React.Component {
                 <form role="form" action="https://www.taobao.com/" method="get">
                     <div className="form-group">
                         <label htmlFor="e-mail">邮箱</label>
-                        <input type="email" className="form-control" id="e-mail" placeholder="请输入电子邮箱"
+                        <input type="email" className="form-control" id="email" placeholder="请输入电子邮箱"
                                required="required"/>
                     </div>
                     <div className="form-group">
@@ -19,7 +34,7 @@ class InformModule extends React.Component {
                                required="required"/>
                     </div>
                     <div className="form-group">
-                        <button type="submit" className="btn btn-default"><Link to="/homePage">提交</Link></button>
+                        <button type="submit" className="btn btn-default" onClick={this.click}>提交</button>
                         <button type="button" className="btn btn-default">修改</button>
                     </div>
                 </form>

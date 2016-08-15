@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-require('../css/homePageStyle.css');
+require('../css/home-page-style.css');
 
 class HomePage extends React.Component {
     render() {
