@@ -27,13 +27,13 @@ exports.login = function (req, res) {
     });
 };
 
-exports.modify = function (req,res,next) {
+exports.modify = function (req, res, next) {
     let email = req.body.email;
     let tel = req.body.tel;
-    User.update({name:userName},{email:email,tel:tel},function (err) {
-        if(err){
+    User.update({name: userName}, {email: email, tel: tel}, function (err) {
+        if (err) {
             return next(err);
-        }else{
+        } else {
             res.send("SUCCESS");
         }
     })
