@@ -17,6 +17,7 @@ exports.login = function (req, res) {
                 res.status(500).send('passwordError');
             } else {
                 userName = name;
+                console.log(user.tel+user.email);
                 if (user.tel && user.email) {
                     res.send('SUCCESS');
                 } else {
